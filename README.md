@@ -15,19 +15,19 @@ Chopnum(num[, options])
 **Type**: _Object_   
 
 
-#### options.step_size
+### options.step_size
 **Type**: _Number_   
 **Default**: `3`   
 Chunk length
 
 
-#### options.separator
+### options.separator
 **Type**: _String_   
 **Default**: ` `   
 Separate chunks with this symbol
 
 
-#### options.round
+### options.round
 **Type**: _Boolean_   
 **Default**: `false` 
 Remove fractional part
