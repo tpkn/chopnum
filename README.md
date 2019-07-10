@@ -15,7 +15,7 @@ Chopnum(num[, options])
 **Type**: _Object_   
 
 
-### options.step_size
+### options.step
 **Type**: _Number_   
 **Default**: `3`   
 Chunk length
@@ -43,7 +43,7 @@ Chopnum(12)
 Chopnum(123456789)
 // => '123 456 789'
 
-Chopnum(123456789, { step_size: 4 })
+Chopnum(123456789, { step: 4 })
 // => '1 2345 6789'
 
 Chopnum(123456789, { separator: '-' })

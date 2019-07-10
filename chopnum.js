@@ -6,14 +6,14 @@ function Chopnum(num, options){
 
    options = options || {};
 
-   var step_size = typeof options.step_size === 'number'    ? options.step_size : 3;
+   var step      = typeof options.step === 'number'         ? options.step      : 3;
    var separator = typeof options.separator === 'string'    ? options.separator : ' ';
    var round     = typeof options.round     !== 'undefined' ? options.round     : false;
 
    var number_str = '' + num;
 
    // Nothing to chop here...
-   if(number_str.length <= step_size){
+   if(number_str.length <= step){
       return num;
    }
 
@@ -26,8 +26,8 @@ function Chopnum(num, options){
    }
 
    var len = number_str.length;
-   var head = len % step_size;
-   var chunks = (len - head) / step_size;
+   var head = len % step;
+   var chunks = (len - head) / step;
    var result = '';
 
    if(head){
@@ -35,7 +35,7 @@ function Chopnum(num, options){
    }
 
    for(var i = 0; i < chunks; i++){
-      result += number_str.substr(i * step_size + head, step_size) + (i != chunks - 1 ? separator : '');
+      result += number_str.substr(i * step + head, step) + (i != chunks - 1 ? separator : '');
    }
    
    return result + (!round ? tail : '');
