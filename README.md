@@ -1,4 +1,4 @@
-# Chopnum
+# Chopnum [![npm Package](https://img.shields.io/npm/v/chopnum.svg)](https://www.npmjs.org/package/chopnum)
 Beautify long number
 
 
