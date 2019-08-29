@@ -1,4 +1,6 @@
-/*! Chopnum, http://tpkn.me/ */
+/*! 
+ * Chopnum, http://tpkn.me/
+ */
 function Chopnum(num, options){
    if(typeof num !== 'number'){
       throw new TypeError('First argument must be a number!');
