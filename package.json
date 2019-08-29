@@ -1,0 +1,17 @@
+{
+   "name": "chopnum",
+   "main": "chopnum.js",
+   "version": "1.0.2",
+   "author": {
+      "url": "https://github.com/tpkn/"
+   },
+   "repository": "https://github.com/tpkn/chopnum",
+   "license": "MIT",
+   "keywords": [
+      "chop",
+      "beutify",
+      "format",
+      "number",
+      "split"
+   ]
+}

@@ -11,10 +11,6 @@ Chopnum(num[, options])
 **Type**: _Number_   
 
 
-### options
-**Type**: _Object_   
-
-
 ### options.step
 **Type**: _Number_   
 **Default**: `3`   
@@ -43,10 +39,19 @@ Chopnum(12)
 Chopnum(123456789)
 // => '123 456 789'
 
+Chopnum(-123456789)
+// => '-123 456 789'
+
 Chopnum(123456789, { step: 4 })
 // => '1 2345 6789'
 
 Chopnum(123456789, { separator: '-' })
 // => '123-456-789'
 ```
+
+
+
+## Changelog 
+#### v1.0.2 (2019-08-29):
+- fixed bug when minus sign was perceived as part of a number
 
